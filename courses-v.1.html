@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>QALAMedu - Universites Oferred In Islamic Finance</title>
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/animate.css" />
+    <link rel="stylesheet" href="./assets/css/odometer.css" />
+    <link rel="stylesheet" href="./assets/css/nice-select.css" />
+    <link rel="stylesheet" href="./assets/css/owl.min.css" />
+    <link rel="stylesheet" href="./assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="./assets/css/flaticon.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon2.png"
+      type="image/x-icon"
+    />
+
+    <style>
+      .menu-container {
+        flex-grow: 1; /* This will make the menu take up remaining space */
+        text-align: left; /* Align menu to the left */
+      }
+    </style>
+  </head>
+
+  <body>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Hide all containers except container-diploma by default
+        $(
+          ".container-degree, .container-master, .container-phd, .container-cert"
+        ).hide();
+
+        // Show container-diploma by default
+        $(".container-diploma").show();
+
+        // Click event for diploma
+        $(".diploma").click(function () {
+          $(
+            ".container-degree, .container-master, .container-phd, .container-cert"
+          ).hide();
+          $(".container-diploma").show();
+        });
+
+        // Click event for degree
+        $(".degree").click(function () {
+          $(
+            ".container-diploma, .container-master, .container-phd, .container-cert"
+          ).hide();
+          $(".container-degree").show();
+        });
+
+        // Click event for master
+        $(".master").click(function () {
+          $(
+            ".container-diploma, .container-degree, .container-phd, .container-cert"
+          ).hide();
+          $(".container-master").show();
+        });
+
+        // Click event for phd
+        $(".phd").click(function () {
+          $(
+            ".container-diploma, .container-degree, .container-master, .container-cert"
+          ).hide();
+          $(".container-phd").show();
+        });
+
+        // Click event for cert
+        $(".cert").click(function () {
+          $(
+            ".container-diploma, .container-degree, .container-master, .container-phd"
+          ).hide();
+          $(".container-cert").show();
+        });
+      });
+    </script>
+    <div class="all-sections oh">
+      <!-- ~~~ Loader & Go-Top ~~~ -->
+      <div class="overlayer"></div>
+      <div class="loader">
+        <div class="inner"></div>
+      </div>
+      <span class="go-top">
+        <i class="fas fa-angle-up"></i>
+      </span>
+      <!-- ~~~ Loader & Go-Top ~~~ -->
+
+      <!-- ~~~ Header Section ~~~ -->
+      <header>
+        <div class="custom-container">
+          <div class="header-area">
+            <div class="logo">
+              <a href="./index.html">
+                <img src="./assets/images/logo/logo2.png" alt="logo" />
+              </a>
+            </div>
+            <div class="menu-container">
+              <!-- Added container -->
+              <ul class="menu d-none d-lg-flex flex-wrap">
+                <li>
+                  <a href="./index.html">Home</a>
+                </li>
+                <li>
+                  <a href="#0">Courses</a>
+                  <ul class="submenu">
+                    <li>
+                      <a href="./courses.html">Courses</a>
+                    </li>
+                    <li>
+                      <a href="./course-details.html">Course Details</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="./courses-v.1.html">Universities</a>
+                </li>
+                <li>
+                  <a href="./events.html">Event</a>
+                </li>
+                <li>
+                  <a href="./forum.html">Forum</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-bar ml-4">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <a href="./signup.html" class="custom-button"
+              ><i class="fas fa-user"></i><span>Sign Up</span></a
+            >
+            &nbsp
+            <a href="./login.html" class="custom-button"
+              ><i class="fas fa-user"></i><span>Login</span></a
+            >
+          </div>
+        </div>
+      </header>
+      <!-- ~~~ Header Section ~~~ -->
+
+      <!-- ~~~ Mobile Menu ~~~ -->
+      <div class="mobile-menu">
+        <span class="close-mobile-menu">
+          <i class="fas fa-times"></i>
+        </span>
+        <div
+          class="w-100 d-flex flex-wrap justify-content-center align-items-center"
+        >
+          <a href="./signup.html" class="custom-button"
+            ><i class="fas fa-user"></i><span>Sign Up</span></a
+          >
+          &nbsp
+          <a href="./login.html" class="custom-button"
+            ><i class="fas fa-user"></i><span>Login</span></a
+          >
+          <div class="w-100 d-lg-none">
+            <ul class="menu">
+              <li>
+                <a href="#0">Home</a>
+              </li>
+              <li>
+                <a href="#0">Courses</a>
+                <ul class="submenu">
+                  <li>
+                    <a href="./courses.html">Courses</a>
+                  </li>
+                  <li>
+                    <a href="./course-details.html">Course Details</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="./courses-v.1.html">Universites</a>
+              </li>
+              <li>
+                <a href="./events.html">Event</a>
+              </li>
+              <li>
+                <a href="./forum.html">Forum</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- ~~~ Mobile Menu ~~~ -->
+
+      <!-- ~~~ Hero Section ~~~ -->
+      <section
+        class="hero-section bg_img"
+        data-img="./assets/images/banner/welcomnewstudent.jpg"
+      >
+        <div class="custom-container">
+          <div class="hero-content">
+            <h1 class="title uppercase cl-white">Universities</h1>
+            <ul class="breadcrumb cl-white p-0 m-0">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>Universities</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- ~~~ Hero Section ~~~ -->
+
+      <!-- ~~~ Course Section ~~~ -->
+      <section class="course-section pt-120 pb-120">
+        <div class="container">
+          <div class="section-header left-style mb-low mb-lg-0">
+            <h2 class="title">Browse by program level</h2>
+          </div>
+          <div
+            class="row justify-content-center mb-30-none"
+            style="padding: 50px; cursor: pointer"
+          >
+            <div class="col-xl-3 col-md-6 col-sm-10 diploma">
+              <div class="feature-item">
+                <div class="content">
+                  <h6 class="title">Diploma</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-10 degree">
+              <div class="feature-item">
+                <div class="content">
+                  <h6 class="title">Bachelor's Degrees</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-10 master">
+              <div class="feature-item">
+                <div class="content">
+                  <h6 class="title">Master's Degree</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-10 phd">
+              <div class="feature-item">
+                <div class="content">
+                  <h6 class="title">PhD</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-10 cert">
+              <div class="feature-item">
+                <div class="content">
+                  <h6 class="title">Professional Certificate</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Diploma Container-->
+          <div class="container-diploma">
+            <div class="row align-items-center section-header">
+              <div class="col-lg-7">
+                <div class="section-header left-style mb-low mb-lg-0">
+                  <span class="category">DIPLOMA</span>
+                  <h2 class="title">
+                    Universities Offered In <span>Islamic Finance</span>
+                  </h2>
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <div class="d-flex flex-wrap justify-content-lg-end m--10">
+                  <div class="course-select-item">
+                    <select class="select-bar">
+                      <option value="c1">Banking</option>
+                      <option value="c2">Entrepreneur</option>
+                      <option value="c3">Finance</option>
+                      <option value="c4">Shariah Compliance</option>
+                      <option value="c5">Investment Analysis</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center mb-30-none">
+              <div class="col-xl-4 col-md-6 col-sm-10">
+                <div class="course-item">
+                  <div class="thumb">
+                    <a href="course-details-edit-diploma.html">
+                      <img src="./assets/images/course/uia3.jpg" alt="course" />
+                    </a>
+                  </div>
+                  <div class="content">
+                    <h5 class="title">
+                      <a href="./course-details-edit-diploma.html"
+                        >Diploma in Entrepreneurship (Islamic Finance & Banking)
+                      </a>
+                    </h5>
+                    <div class="meta-area">
+                      <div class="meta">
+                        <div class="meta-item">
+                          <i class="fas fa-building"></i>
+                          <span>International Islamic University Malaysia</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ratings-area">
+                      <div class="price cl-1">3 Years</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6 col-sm-10">
+                <div class="course-item">
+                  <div class="thumb">
+                    <a href="course-details-edit-diploma.html">
+                      <img src="./assets/images/course/uia3.jpg" alt="course" />
+                    </a>
+                  </div>
+                  <div class="content">
+                    <h5 class="title">
+                      <a href="./course-details-edit-diploma.html"
+                        >Diploma in Business Administration (Islamic Banking and
+                        Finance)</a
+                      >
+                    </h5>
+                    <div class="meta-area">
+                      <div class="meta">
+                        <div class="meta-item">
+                          <i class="fas fa-building"></i>
+                          <span>University of Malaya</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ratings-area">
+                      <div class="price cl-1">3 Years</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6 col-sm-10">
+                <div class="course-item">
+                  <div class="thumb">
+                    <a href="course-details-edit-diploma.html">
+                      <img src="./assets/images/course/uia3.jpg" alt="course" />
+                    </a>
+                  </div>
+                  <div class="content">
+                    <h5 class="title">
+                      <a href="./course-details-edit-diploma.html"
+                        >Diploma in Islamic Finance and Banking</a
+                      >
+                    </h5>
+                    <div class="meta-area">
+                      <div class="meta">
+                        <div class="meta-item">
+                          <i class="fas fa-building"></i>
+                          <span>Universiti Teknologi MARA</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ratings-area">
+                      <div class="price cl-1">3.5 Years</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--degreee-->
+          <div class="container-degree">
+            <div class="row align-items-center section-header">
+              <div class="col-lg-7">
+                <div class="section-header left-style mb-low mb-lg-0">
+                  <span class="category">BACHELOR'S DEGREES</span>
+                  <h2 class="title">
+                    Universities Offered In <span>Islamic Finance</span>
+                  </h2>
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <div class="d-flex flex-wrap justify-content-lg-end m--10">
+                  <div class="course-select-item">
+                    <select class="select-bar">
+                      <option value="c1">Banking</option>
+                      <option value="c2">Entrepreneur</option>
+                      <option value="c3">Finance</option>
+                      <option value="c4">Shariah Compliance</option>
+                      <option value="c5">Investment Analysis</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center mb-30-none">
+              <div class="col-xl-4 col-md-6 col-sm-10">
+                <div class="course-item">
+                  <div class="thumb">
+                    <a href="course-details-edit.html">
+                      <img src="./assets/images/course/uia3.jpg" alt="course" />
+                    </a>
+                  </div>
+                  <div class="content">
+                    <h5 class="title">
+                      <a href="./course-details-edit.html"
+                        >Bachelor of Entrepreneurship (Islamic Finance &
+                        Banking) (Hons)</a
+                      >
+                    </h5>
+                    <div class="meta-area">
+                      <div class="meta">
+                        <div class="meta-item">
+                          <i class="fas fa-building"></i>
+                          <span>International Islamic University Malaysia</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ratings-area">
+                      <div class="price cl-1">4 Years</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6 col-sm-10">
+                <div class="course-item">
+                  <div class="thumb">
+                    <a href="course-details-edit.html">
+                      <img src="./assets/images/course/uia3.jpg" alt="course" />
+                    </a>
+                  </div>
+                  <div class="content">
+                    <h5 class="title">
+                      <a href="./course-details-edit.html"
+                        >Bachelor of Business Administration (Islamic Banking
+                        and Finance)</a
+                      >
+                    </h5>
+                    <div class="meta-area">
+                      <div class="meta">
+                        <div class="meta-item">
+                          <i class="fas fa-building"></i>
+                          <span>University of Malaya</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ratings-area">
+                      <div class="price cl-1">4 Years</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-4 col-md-6 col-sm-10">
+                <div class="course-item">
+                  <div class="thumb">
+                    <a href="course-details-edit.html">
+                      <img src="./assets/images/course/uia3.jpg" alt="course" />
+                    </a>
+                  </div>
+                  <div class="content">
+                    <h5 class="title">
+                      <a href="./course-details-edit.html"
+                        >Bachelor of Islamic Finance and Banking</a
+                      >
+                    </h5>
+                    <div class="meta-area">
+                      <div class="meta">
+                        <div class="meta-item">
+                          <i class="fas fa-building"></i>
+                          <span>Universiti Teknologi MARA</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ratings-area">
+                      <div class="price cl-1">4 Years</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--end degree-->
+
+          <!--master -->
+          <div class="container-master">
+            <div class="row align-items-center section-header">
+              <div class="col-lg-7">
+                <div class="section-header left-style mb-low mb-lg-0">
+                  <span class="category">MASTER's DEGREE</span>
+                  <h2 class="title">
+                    Universities Offered In <span>Islamic Finance</span>
+                  </h2>
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <div class="d-flex flex-wrap justify-content-lg-end m--10">
+                  <div class="course-select-item">
+                    <select class="select-bar">
+                      <option value="c1">Banking</option>
+                      <option value="c2">Entrepreneur</option>
+                      <option value="c3">Finance</option>
+                      <option value="c4">Shariah Compliance</option>
+                      <option value="c5">Investment Analysis</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center mb-30-none">
+              <div class="col-xl-4 col-md-6 col-sm-10">
+                <div class="course-item">
+                  <div class="thumb">
+                    <a href="course-details-edit-master.html">
+                      <img src="./assets/images/course/uia3.jpg" alt="course" />
+                    </a>
+                  </div>
+                  <div class="content">
+                    <h5 class="title">
+                      <a href="./course-details-edit-master.html"
+                        >Master of Entrepreneurship (Islamic Finance &
+                        Banking)</a
+                      >
+                    </h5>
+                    <div class="meta-area">
+                      <div class="meta">
+                        <div class="meta-item">
+                          <i class="fas fa-building"></i>
+                          <span>International Islamic University Malaysia</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ratings-area">
+                      <div class="price cl-1">1 Years</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6 col-sm-10">
+                <div class="course-item">
+                  <div class="thumb">
+                    <a href="course-details-edit-master.html">
+                      <img src="./assets/images/course/uia3.jpg" alt="course" />
+                    </a>
+                  </div>
+                  <div class="content">
+                    <h5 class="title">
+                      <a href="./course-details-edit-master.html"
+                        >Master of Business Administration (Islamic Banking and
+                        Finance)</a
+                      >
+                    </h5>
+                    <div class="meta-area">
+                      <div class="meta">
+                        <div class="meta-item">
+                          <i class="fas fa-building"></i>
+                          <span>University of Malaya</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ratings-area">
+                      <div class="price cl-1">1.5 Years</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--end master-->
+
+          <!--PhD-->
+          <div class="container-phd">
+            <div class="row align-items-center section-header">
+              <div class="col-lg-7">
+                <div class="section-header left-style mb-low mb-lg-0">
+                  <span class="category">DOCTOR OF PHILOSOPHY (PhD)</span>
+                  <h2 class="title">
+                    Universities Offered In <span>Islamic Finance</span>
+                  </h2>
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <div class="d-flex flex-wrap justify-content-lg-end m--10">
+                  <div class="course-select-item">
+                    <select class="select-bar">
+                      <option value="c1">Banking</option>
+                      <option value="c2">Entrepreneur</option>
+                      <option value="c3">Finance</option>
+                      <option value="c4">Shariah Compliance</option>
+                      <option value="c5">Investment Analysis</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center mb-30-none">
+              <div class="col-xl-4 col-md-6 col-sm-10">
+                <div class="course-item">
+                  <div class="thumb">
+                    <a href="course-details-edit-phd.html">
+                      <img src="./assets/images/course/uia3.jpg" alt="course" />
+                    </a>
+                  </div>
+                  <div class="content">
+                    <h5 class="title">
+                      <a href="./course-details-edit-phd.html"
+                        >Doctor of Philosophy in Islamic Banking</a
+                      >
+                    </h5>
+                    <div class="meta-area">
+                      <div class="meta">
+                        <div class="meta-item">
+                          <i class="fas fa-building"></i>
+                          <span>International Islamic University Malaysia</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ratings-area">
+                      <div class="price cl-1">2 Years</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--end PhD-->
+
+          <!--Cert-->
+          <div class="container-cert">
+            <div class="row align-items-center section-header">
+              <div class="col-lg-7">
+                <div class="section-header left-style mb-low mb-lg-0">
+                  <span class="category">PROFESSIONAL CERTIFICATE</span>
+                  <h2 class="title">
+                    Universities Offered In <span>Islamic Finance</span>
+                  </h2>
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <div class="d-flex flex-wrap justify-content-lg-end m--10">
+                  <div class="course-select-item">
+                    <select class="select-bar">
+                      <option value="c1">Banking</option>
+                      <option value="c2">Entrepreneur</option>
+                      <option value="c3">Finance</option>
+                      <option value="c4">Shariah Compliance</option>
+                      <option value="c5">Investment Analysis</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center mb-30-none">
+              <div class="col-xl-4 col-md-6 col-sm-10">
+                <div class="course-item">
+                  <div class="thumb">
+                    <a href="course-details-edit-cert.html">
+                      <img src="./assets/images/course/uia3.jpg" alt="course" />
+                    </a>
+                  </div>
+                  <div class="content">
+                    <h5 class="title">
+                      <a href="./course-details-edit-cert.html"
+                        >Professional Certificate in Islamic Finance (eMIF)</a
+                      >
+                    </h5>
+                    <div class="meta-area">
+                      <div class="meta">
+                        <div class="meta-item">
+                          <i class="fas fa-building"></i>
+                          <span>International Islamic University Malaysia</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ratings-area">
+                      <div class="price cl-1">1 Year</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6 col-sm-10">
+                <div class="course-item">
+                  <div class="thumb">
+                    <a href="course-details-edit-cert.html">
+                      <img src="./assets/images/course/uia3.jpg" alt="course" />
+                    </a>
+                  </div>
+                  <div class="content">
+                    <h5 class="title">
+                      <a href="./course-details-edit-cert.html"
+                        >Chartered Professional in Islamic Finance</a
+                      >
+                    </h5>
+                    <div class="meta-area">
+                      <div class="meta">
+                        <div class="meta-item">
+                          <i class="fas fa-building"></i>
+                          <span>University of Malaya</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ratings-area">
+                      <div class="price cl-1">1 Year</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--end cert-->
+        </div>
+      </section>
+
+      <!-- ~~~ Contact Section ~~~ -->
+      <section class="contact-section pt-120 pb-120">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-lg-6 col-xl-5">
+              <div class="section-header left-style mb-lg-0">
+                <h2 class="title">
+                  Pursuing a career <span>in Islamic banking!</span>
+                </h2>
+                <p>
+                  A career in Islamic banking involves working in financial
+                  institutions that adhere to Shariah principles, offering
+                  services without interest (riba) and investing ethically.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-xl-6">
+              <div class="contact-info">
+                <div class="contact-info-item">
+                  <div class="icon">
+                    <i class="fa fa-user-circle"></i>
+                  </div>
+                  <h6 class="title">Islamic Financial Analyst</h6>
+                </div>
+                <div class="contact-info-item">
+                  <div class="icon">
+                    <i class="fa fa-user-circle"></i>
+                  </div>
+                  <h6 class="title">Shariah Compliance Officer</h6>
+                </div>
+                <div class="contact-info-item">
+                  <div class="icon">
+                    <i class="fa fa-user-circle"></i>
+                  </div>
+                  <h6 class="title">Islamic Wealth Manager</h6>
+                </div>
+                <div class="contact-info-item">
+                  <div class="icon">
+                    <i class="fa fa-user-circle"></i>
+                  </div>
+                  <h6 class="title">Islamic Banking Relationship Manager</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ~~~ Contact Section ~~~ -->
+
+      <!-- ~~~ Footer Section ~~~ -->
+      <footer
+        class="bg_img mt-80"
+        data-img="./assets/images/footer/footer-bg.jpg"
+      >
+        <div class="footer-support">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-4 col-md-6 col-sm-10">
+                <div class="footer-support-item">
+                  <div class="icon">
+                    <i class="flaticon-phone-call"></i>
+                  </div>
+                  <div class="content">
+                    <h5 class="title">+03 5808080</h5>
+                    <span class="info">Free Support Line</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-10">
+                <div class="footer-support-item">
+                  <div class="icon">
+                    <i class="flaticon-headphone"></i>
+                  </div>
+                  <div class="content">
+                    <h5 class="title">Support Center</h5>
+                    <span class="info">365 days full support</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-10">
+                <div class="footer-support-item">
+                  <div class="icon">
+                    <i class="flaticon-live"></i>
+                  </div>
+                  <div class="content">
+                    <h5 class="title">Live Support</h5>
+                    <span class="info">Write Online Now</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-section oh pos-rel">
+          <div class="course-top-shape">
+            <img
+              src="./assets/images/course/course-top-shape.png"
+              alt="course"
+            />
+          </div>
+          <div class="course-bottom-shape">
+            <img
+              src="./assets/images/course/course-bottom-shape.png"
+              alt="course"
+            />
+          </div>
+          <div class="container">
+            <div class="footer-top">
+              <div class="footer-area">
+                <div class="footer-widget widget-link">
+                  <h5 class="title">Talk to Us</h5>
+                  <ul>
+                    <li>
+                      <a href="#0">About us</a>
+                    </li>
+                    <li>
+                      <a href="#0">Registration</a>
+                    </li>
+                    <li>
+                      <a href="#0">Blog</a>
+                    </li>
+                    <li>
+                      <a href="#0">Events</a>
+                    </li>
+                    <li>
+                      <a href="#0">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-widget widget-link">
+                  <h5 class="title">Information</h5>
+                  <ul>
+                    <li>
+                      <a href="#0">Membership</a>
+                    </li>
+                    <li>
+                      <a href="#0">Purchase guide</a>
+                    </li>
+                    <li>
+                      <a href="#0">Privacy policy</a>
+                    </li>
+                    <li>
+                      <a href="#0">Terms of service</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-widget widget-link">
+                  <h5 class="title">Support</h5>
+                  <ul>
+                    <li>
+                      <a href="#0">Documentation</a>
+                    </li>
+                    <li>
+                      <a href="#0">FAQs</a>
+                    </li>
+                    <li>
+                      <a href="#0">Condition</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-widget widget-info">
+                  <h5 class="title">Contact Us</h5>
+                  <ul>
+                    <li>
+                      <div class="icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                      </div>
+                      <div class="content">
+                        <span
+                          >12/A, Jalan Jetatek, 51200, Kuala Lumpur,
+                          Malaysia</span
+                        >
+                      </div>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <i class="fas fa-phone-alt"></i>
+                      </div>
+                      <div class="content">
+                        <a href="#">+03 5808080</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="icon">
+                        <i class="fas fa-envelope-open-text"></i>
+                      </div>
+                      <div class="content">
+                        <a href="Mailto:info@exampleweb.com"
+                          >info@exampleweb.com</a
+                        >
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <div class="row align-items-center">
+                <div class="col-md-8">
+                  <h5 class="title">Subscribe Newsletter</h5>
+                  <form class="footer-subscribe-form">
+                    <input
+                      type="text"
+                      placeholder="Enter Your Email"
+                      name="email"
+                    />
+                    <button type="submit">Subscribe Now</button>
+                  </form>
+                </div>
+                <div class="col-md-4">
+                  <div class="thumb">
+                    <a href="./index.html">
+                      <img
+                        src="./assets/images/footer/footer-bottom-2.png"
+                        alt="footer"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="copyright-area">
+              <div class="left">
+                <p>&copy; Copyright 2023. All Rights Reserved.</p>
+              </div>
+              <div class="right">
+                <ul class="social-icons">
+                  <li>
+                    <a href="#0"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#0" class="active"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#0"><i class="fab fa-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href="#0"><i class="fab fa-linkedin-in"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- ~~~ Footer Section ~~~ -->
+    </div>
+
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/isotope.pkgd.min.js"></script>
+    <script src="./assets/js/magnific-popup.min.js"></script>
+
+    <script src="./assets/js/odometer.min.js"></script>
+    <script src="./assets/js/viewport.jquery.js"></script>
+    <script src="./assets/js/nice-select.js"></script>
+    <script src="./assets/js/owl.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
